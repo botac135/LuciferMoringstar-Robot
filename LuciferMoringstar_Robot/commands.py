@@ -56,8 +56,8 @@ async def start(bot: lucifermoringstar_robot, update):
                 mrk, file_id = update.text.split("-mo-tech-group-")
                 FORCES = ["https://telegra.ph/file/b2acb2586995d0e107760.jpg"]
                 invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
-                pr0fess0r_99 = [[ InlineKeyboardButton("🔰 𝙹𝙾𝙸𝙽 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 🔰", url=invite_link.invite_link) ],
-                                [ InlineKeyboardButton("🔄 𝚃𝚁𝚈 𝙰𝙶𝙰𝙸𝙽 🔄", callback_data=f"luciferPM#{file_id}") ]]
+                pr0fess0r_99 = [[ InlineKeyboardButton("☘️𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍☘️", url=invite_link.invite_link) ],
+                                [ InlineKeyboardButton("𝑻𝒓𝒚 𝑨𝒈𝒂𝒊𝒏", callback_data=f"luciferPM#{file_id}") ]]
                 pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
                 await update.reply_photo(photo=random.choice(FORCES), caption=f"""<i><b>𝙷𝙴𝙻𝙻𝙾 {update.from_user.mention}. \n 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 <a href="{invite_link.invite_link}"> 𝙽𝙾𝚃 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝙳</a> 𝚃𝙾 <a href="{invite_link.invite_link}">𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻</a>.𝚂𝙾 𝚈𝙾𝚄 𝙳𝙾 𝙽𝙾𝚃 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙾𝙽 𝙱𝙾𝚃 𝙿𝙼 𝙾𝚁 𝙶𝚁𝙾𝚄𝙿 (𝙵𝙸𝙻𝚃𝙴𝚁)</i></b>""", reply_markup=pr0fess0r_99)                
                 return
@@ -74,7 +74,7 @@ async def start(bot: lucifermoringstar_robot, update):
     if len(update.command) ==2 and update.command[1] in ["subscribe"]:
         FORCES = ["https://telegra.ph/file/b2acb2586995d0e107760.jpg"]
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
-        pr0fess0r_99 = [[ InlineKeyboardButton("🔔 SUBSCRIBE 🔔", url=invite_link.invite_link) ]]
+        pr0fess0r_99 = [[ InlineKeyboardButton("⚡𝑺𝒖𝒃𝒔𝒄𝒓𝒊𝒃𝒆⚡", url=invite_link.invite_link) ]]
         pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
         await update.reply_photo(photo=random.choice(FORCES), caption=f"""<i><b>𝙷𝙴𝙻𝙻𝙾 {update.from_user.mention}. \n 𝚈𝙾𝚄 𝙷𝙰𝚅𝙴 <a href="{invite_link.invite_link}"> 𝙽𝙾𝚃 𝚂𝚄𝙱𝚂𝙲𝚁𝙸𝙱𝙴𝙳</a> 𝚃𝙾 <a href="{invite_link.invite_link}">𝙼𝚈 𝚄𝙿𝙳𝙰𝚃𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻</a>.𝚂𝙾 𝚈𝙾𝚄 𝙳𝙾 𝙽𝙾𝚃 𝙶𝙴𝚃 𝚃𝙷𝙴 𝙵𝙸𝙻𝙴𝚂 𝙾𝙽 𝙱𝙾𝚃 𝙿𝙼, 𝚅𝙸𝙰 𝙰𝙽𝙳 𝙶𝚁𝙾𝚄𝙿 (𝙵𝙸𝙻𝚃𝙴𝚁)</i></b>""", reply_markup=pr0fess0r_99)
         return
@@ -93,13 +93,12 @@ async def admin(bot: lucifermoringstar_robot, update):
 
 @lucifermoringstar_robot.on_message(filters.command(["about"]) & filters.private, group=3)
 async def about(bot: lucifermoringstar_robot, update):
-    pr0fess0r_99 = [[ InlineKeyboardButton("📦 𝚂𝙾𝚄𝚁𝙲𝙴 📦", url="https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot") ],
-                    [ InlineKeyboardButton("𝙷𝙾𝙼𝙴", callback_data="start"), InlineKeyboardButton("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴", callback_data="usage"), InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data="close") ]]                     
+    pr0fess0r_99 = [[ InlineKeyboardButton("𝑯𝒐𝒎𝒆", callback_data="start"), InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆🗑️", callback_data="close") ]]                     
     await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=ABOUT_MESSAGE.format(name = CREATOR_NAME, username = CREATOR_USERNAME, py3_version = temp.PY3_VERSION, pyro_version = temp.PYRO_VERSION, version = temp.BOT_VERSION, source = "https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot"), reply_markup=InlineKeyboardMarkup(pr0fess0r_99))
 
 @lucifermoringstar_robot.on_message(filters.command(["usage"]) & filters.private, group=4)
 async def usage(bot: lucifermoringstar_robot, update):
-    pr0fess0r_99 = [[ InlineKeyboardButton("🗑️ 𝙳𝙴𝙻𝙴𝚃𝙴 🗑️", callback_data="close") ]]
+    pr0fess0r_99 = [[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆🗑️", callback_data="close") ]]
     await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=USAGE_MESSAGE.format(CREATOR_NAME, CREATOR_USERNAME), reply_markup=InlineKeyboardMarkup(pr0fess0r_99))
 
 @lucifermoringstar_robot.on_message(filters.command(["broadcast"]) & filters.user(ADMINS) & filters.private, group=5)
