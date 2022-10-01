@@ -58,122 +58,154 @@ async def cb_handler(bot, update):
                 await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
                 return
 
-            if int(index) == int(data["total"]) - 2:
+               if int(index) == int(data["total"]) - 2:
                 buttons = data['buttons'][int(index)+1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close")]
+                    [InlineKeyboardButton("👈 𝘽𝙖𝙘𝙠", callback_data=f"backgroup_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
                 )
-                await update.edit_message_reply_markup( 
+
+                await query.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
                 return
             else:
                 buttons = data['buttons'][int(index)+1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝘽𝙖𝙘𝙠", callback_data=f"backgroup_{int(index)+1}_{keyword}"),InlineKeyboardButton("𝙉𝙚𝙭𝙩 👉", callback_data=f"nextgroup_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
                 )
-                await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
+
+                await query.edit_message_reply_markup( 
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
                 return
-        
-        elif update.data.startswith("backgroup"):
-            mrk, index, keyword = update.data.split("_")
+
+        elif query.data.startswith("backgroup"):
+            ident, index, keyword = query.data.split("_")
             try:
-                data = temp.BUTTONS[keyword]
+                data = BUTTONS[keyword]
             except KeyError:
-                await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
+                await query.answer("This Is My Old Message So Please Request Again 🙏",show_alert=True)
                 return
+
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("𝙉𝙚𝙭𝙩 👉", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
                 )
-                await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
+                await query.edit_message_reply_markup( 
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
                 return   
             else:
                 buttons = data['buttons'][int(index)-1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backgroup_{int(index)-1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝘽𝙖𝙘𝙠", callback_data=f"backgroup_{int(index)-1}_{keyword}"),InlineKeyboardButton("𝙉𝙚𝙭𝙩 👉", callback_data=f"nextgroup_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 𝙲𝙷𝙴𝙲𝙺 𝙼𝚈 𝙿𝙼 🤖", url=f"https://telegram.dog/{temp.Bot_Username}")]
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
                 )
-                await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
+
+                await query.edit_message_reply_markup( 
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
                 return
 
-        elif update.data.startswith("nextbot"):
-            mrk, index, keyword = update.data.split("_")
+# # ---------- 🔘 [ | 𝗕𝗢𝗧 𝗣𝗠 𝗙𝗜𝗟𝗧𝗘𝗥𝗦 | ] 🔘 ---------- # #
+
+
+        elif query.data.startswith("nextbot"):
+            ident, index, keyword = query.data.split("_")
             try:
-                data = temp.BUTTONS[keyword]
+                data = BUTTONS[keyword]
             except KeyError:
-                await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
+                await query.answer("This Is My Old Message So Please Request Again 🙏",show_alert=True)
                 return
+
             if int(index) == int(data["total"]) - 2:
                 buttons = data['buttons'][int(index)+1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close")]
+                    [InlineKeyboardButton("👈 𝘽𝙖𝙘𝙠", callback_data=f"backbot_{int(index)+1}_{keyword}")]
+                )
+                buttons.append(
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
                 )
 
-                await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
+                await query.edit_message_reply_markup( 
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
                 return
             else:
                 buttons = data['buttons'][int(index)+1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)+1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)+2}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝘽𝙖𝙘𝙠", callback_data=f"backbot_{int(index)+1}_{keyword}"),InlineKeyboardButton("𝙉𝙚𝙭𝙩 👉", callback_data=f"nextbot_{int(index)+1}_{keyword}")]
+                )
+                buttons.append(
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)+2}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
                 )
 
-                await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
+                await query.edit_message_reply_markup( 
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
                 return
 
-        elif update.data.startswith("backbot"):
-            mrk, index, keyword = update.data.split("_")
+        elif query.data.startswith("backbot"):
+            ident, index, keyword = query.data.split("_")
             try:
-                data = temp.BUTTONS[keyword]
+                data = BUTTONS[keyword]
             except KeyError:
-                await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
+                await query.answer("This Is My Old Message So Please Request Again 🙏",show_alert=True)
                 return
+
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("𝙉𝙚𝙭𝙩 👉", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
+                )
+                buttons.append(
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
                 )
 
-                await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
+                await query.edit_message_reply_markup( 
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
                 return   
             else:
                 buttons = data['buttons'][int(index)-1].copy()
+
                 buttons.append(
-                    [InlineKeyboardButton("🔙", callback_data=f"backbot_{int(index)-1}_{keyword}"),
-                     InlineKeyboardButton(f"📃 {int(index)}/{data['total']}", callback_data="pages"),
-                     InlineKeyboardButton("🗑️", callback_data="close"),
-                     InlineKeyboardButton("➡", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("👈 𝘽𝙖𝙘𝙠", callback_data=f"backbot_{int(index)-1}_{keyword}"),InlineKeyboardButton("𝙉𝙚𝙭𝙩 👉", callback_data=f"nextbot_{int(index)-1}_{keyword}")]
                 )
-                await update.edit_message_reply_markup(reply_markup=InlineKeyboardMarkup(buttons))                
+                buttons.append(
+                    [InlineKeyboardButton(f"𝙋𝙖𝙜𝙚 𝙉𝙤:- {int(index)}/{data['total']}", callback_data="pages"),
+                     InlineKeyboardButton("𝘾𝙡𝙤𝙨𝙚 🗑️", callback_data="close")]
+                )
+
+                await query.edit_message_reply_markup( 
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
                 return
 
         elif update.data.startswith("settings"):
