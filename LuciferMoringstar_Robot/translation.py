@@ -25,10 +25,19 @@
 # License Link : https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot/blob/LuciferMoringstar-Robot/LICENSE
 
 START_MESSAGE = """
-👋Hello {mention}..!
-It's Power Full [{name}](t.me/{username}) Here 😎
-Add Me To Your Group And Make Sure I'm an Admin There..!
-And Enjoy My Pever Show..! 🤪"""
+𝑯𝒊 🙋🏻 {mention} 𝑰 𝒂𝒎 [{name}](t.me/{username})
+
+𝑯𝒆𝒓𝒆 𝒀𝒐𝒖 𝑪𝒂𝒏 𝑺𝒆𝒂𝒓𝒄𝒉 𝒇𝒊𝒍𝒆𝒔.  𝑱𝒖𝒔𝒕 𝑻𝒂𝒑 𝑶𝒏 𝑻𝒉𝒆 🔍 𝑺𝒆𝒂𝒓𝒄𝒉 𝑩𝒖𝒕𝒕𝒐𝒏 𝑨𝒏𝒅 𝑻𝒚𝒑𝒆 𝒀𝒐𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑵𝒂𝒎𝒆... 
+
+𝑴𝒖𝒔𝒕 𝒀𝒐𝒖 𝑩𝒆 𝑨 𝑴𝒆𝒎𝒃𝒆𝒓 𝑶𝒇 @freakersmovie 𝑻𝒐 𝑼𝒔𝒆 𝑴𝒆.
+
+𝑭𝒐𝒓 𝑴𝒐𝒓𝒆 𝑫𝒆𝒕𝒂𝒊𝒍𝒔 𝑪𝒍𝒊𝒄𝒌 𝑯𝑬𝑳𝑷 𝑩𝒖𝒕𝒕𝒐𝒏 𝑩𝒆𝒍𝒐𝒘. 👇
+
+𝑴𝒂𝒊𝒏𝒕𝒂𝒊𝒏𝒆𝒅 𝒃𝒚 : @naughty_nonsense
+𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 : @freakersmovie
+
+100% ғᴀꜱᴛ & ϙᴜᴀʟɪᴛʏ
+▬▬▬▬▬▬▬▬▬▬▬▬"""
 
 HELP_MESSAGE = """
 𝙷𝙴𝙻𝙻𝙾 {mention}
@@ -38,7 +47,7 @@ HELP_MESSAGE = """
 ABOUT_MESSAGE = """
 𝙱𝙾𝚃 𝚃𝚈𝙿𝙴 : Movies Serach Bot
 𝙱𝙾𝚃 𝙱𝚁𝙰𝙽𝙲𝙷 : Freakers Filmy
-𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : [Click Here](t.me/naughty_nonesense)
+𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : [Click Here](t.me/naughty_nonsense)
 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : [{name}](https://t.me/{username})
 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽3 : {py3_version}
 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 : {pyro_version}
@@ -63,11 +72,11 @@ WELCOME_MESSAGE = """
 𝙷𝙴𝙻𝙻𝙾 {mention} 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {group_name}"""
 
 FILECAPTION_MESSAGE = """
-• `{file_name}` \n▬▬▬▬▬▬▬▬▬▬▬▬
+'{file_name}` \n▬▬▬▬▬▬▬▬▬▬▬▬
 🍃<b><i>Movies Update Channel</b></i>🍃
-</i>@freakersmovie</i>
+<i>@freakersmovie</i>
 🍃<b><i>Series Update Channel</b></i>🍃
-@freakers_series
+<i>@freakers_series</i>
 ▬▬▬▬▬▬▬▬▬▬▬▬
 ☘𝙅𝙤𝙞𝙣:-<b><i>https://t.me/freakersmovie</b></i>
 
