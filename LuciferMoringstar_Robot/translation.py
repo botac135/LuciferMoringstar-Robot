@@ -65,11 +65,7 @@ SPELLMODE_MESSAGE = """
 **__Couldn't Find {query} ?  Please Click Your Request Name**__"""
 
 REQUEST_MESSAGE = """
-𝐓𝐢𝐭𝐥𝐞: [{title}]({url})
-𝐘𝐞𝐚𝐫: {year}
-𝐑𝐚𝐭𝐢𝐧𝐠 {rating}/10
-𝐆𝐞𝐧𝐫𝐞: {genres}
-𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲: <i><b>@freakersfilmy </b></i>©
+**Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}
 """
 
 WELCOME_MESSAGE = """
