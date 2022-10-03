@@ -70,7 +70,7 @@ async def pm_filters(client, update):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages"),
+                [InlineKeyboardButton(text="📂 Pages 1/1",callback_data="pages"),
                  InlineKeyboardButton("Close 🗑️", callback_data="close")]
             )
 
@@ -89,9 +89,9 @@ async def pm_filters(client, update):
         buttons = data['buttons'][0].copy()
     
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 1/{data['total']}",callback_data="pages"),
+            [InlineKeyboardButton(text=f"📂 1/{data['total']}",callback_data="pages"),
              InlineKeyboardButton("🗑️", callback_data="close"),
-             InlineKeyboardButton(text="➡",callback_data=f"nextbot_0_{keyword}")]
+             InlineKeyboardButton(text="𝙉𝙚𝙭𝙩👉",callback_data=f"nextbot_0_{keyword}")]
         )
         
         if REQUEST_MOVIE:
