@@ -45,9 +45,13 @@ HELP_MESSAGE = """
 """
 
 ABOUT_MESSAGE = """
-𝙱𝙾𝚃 𝚃𝚈𝙿𝙴 : Movies Serach Bot
-𝙱𝙾𝚃 𝙱𝚁𝙰𝙽𝙲𝙷 : Freakers Filmy
-𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 : [Click Here](t.me/naughty_nonsense)
+𝙱𝙾𝚃 𝚃𝚈𝙿𝙴 : [Movies Serach Bot](t.me/freakersfilterbot)
+𝙱𝙾𝚃 𝙱𝚁𝙰𝙽𝙲𝙷 : [Freakers Filmy](t.me/freakersfilmy)
+𝙼𝙾𝚅𝙸𝙴𝚂 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 : [Click Here](t.me/freakersmovie)
+𝚂𝙴𝚁𝙸𝙴𝚂 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 : [Click Here](t.me/freakers_series)
+𝙼𝙾𝚅𝙸𝙴 𝙱𝙾𝚃 : [Click Here](t.me/freakersfilterbot)
+𝚂𝙴𝚁𝙸𝙴𝚂 𝙱𝙾𝚃 : [Click Here](t.me/ffseriesbot)
+𝙲𝚁𝙴𝙰𝚃𝙾𝚁 : [Click Here](t.me/naughty_nonsense)
 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 : 𝙿𝚈𝚃𝙷𝙾𝙽3 : {py3_version}
 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 : 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼 : {pyro_version}
 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 : {version}
