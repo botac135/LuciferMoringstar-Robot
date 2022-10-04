@@ -69,8 +69,8 @@ SPELLMODE_MESSAGE = """
 **__Couldn't Find {query} ?  Please Click Your Request Name**__"""
 
 REQUEST_MESSAGE = """
-'title': movie.get('title')
-**Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}
+𝐓𝐢𝐭𝐥𝐞 : {query} \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : {mention}
+🧐𝙁𝙧𝙚𝙖𝙠𝙚𝙧𝙨🎭𝙁𝙞𝙡𝙢𝙮™🍿©
 """
 
 WELCOME_MESSAGE = """
