@@ -69,6 +69,7 @@ SPELLMODE_MESSAGE = """
 **__Couldn't Find {query} ?  Please Click Your Request Name**__"""
 
 REQUEST_MESSAGE = """
+'title': movie.get('title')
 **Requested By:** {mention}\n**Requested Name:** {query}\n™ {group_name}
 """
 
