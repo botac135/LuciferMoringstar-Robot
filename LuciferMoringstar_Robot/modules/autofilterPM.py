@@ -28,7 +28,7 @@ import re, random, asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from LuciferMoringstar_Robot import temp, PICS, REQUEST_MOVIE, SINGLE_BUTTON, MOVIE_TEXT
-from LuciferMoringstar_Robot.functions import get_size, split_list
+from LuciferMoringstar_Robot.functions import get_size, split_list, get_settings
 from database.autofilter_mdb import get_filter_results
 
 async def pm_filters(client, update):
