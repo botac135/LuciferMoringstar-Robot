@@ -180,11 +180,11 @@ async def save_template(bot, update):
         return
 
     if len(update.command) < 2:
-        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴", callback_data="autofilter") ]] ))
+        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", callback_data="autofilter") ]] ))
 
     pr0fess0r_99 = update.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'template', pr0fess0r_99)
-    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 (𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝚃𝙴𝙼𝙿) 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
+    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 (𝙰𝚄𝚃𝙾𝙵𝙸𝙻𝚃𝙴𝚁 𝚃𝙴𝙼𝙿) 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆🗑️", callback_data="close") ]] ))
 
 @lucifermoringstar_robot.on_message((filters.private | filters.group) & filters.command('setwelcome'), group=7)
 async def setwelcome(client, message):
@@ -220,11 +220,11 @@ async def setwelcome(client, message):
         return
 
     if len(message.command) < 2:
-        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴", callback_data="welcome") ]] ))
+        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", callback_data="welcome") ]] ))
 
     pr0fess0r_99 = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'welcometext', pr0fess0r_99)
-    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
+    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆🗑️", callback_data="close") ]] ))
 
 
 @lucifermoringstar_robot.on_message((filters.private | filters.group) & filters.command('setspell'), group=8)
@@ -265,11 +265,11 @@ async def setspell(client, message):
         return
 
     if len(message.command) < 2:
-        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴", callback_data="spellcheck") ]] ))
+        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", callback_data="spellcheck") ]] ))
 
     pr0fess0r_99 = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'spelltext', pr0fess0r_99)
-    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚂𝙴𝚃 𝚂𝙿𝙴𝙻𝙻 𝙲𝙷𝙴𝙲𝙺 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
+    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝚂𝙴𝚃 𝚂𝙿𝙴𝙻𝙻 𝙲𝙷𝙴𝙲𝙺 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆🗑️", callback_data="close") ]] ))
 
 @lucifermoringstar_robot.on_message((filters.private | filters.group) & filters.command('setcaption'), group=9)
 async def filecap(client, message):
@@ -309,8 +309,8 @@ async def filecap(client, message):
         return
 
     if len(message.command) < 2:
-        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝙲𝙻𝙸𝙲𝙺 𝙷𝙴𝚁𝙴", callback_data="filecaption") ]] ))
+        return await sts.edit("𝙷𝙾𝚆 𝚃𝙾 𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳..!", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", callback_data="filecaption") ]] ))
 
     pr0fess0r_99 = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'caption', pr0fess0r_99)
-    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙵𝙸𝙻𝙴 𝙲𝙰𝙿𝚃𝙸𝙾𝙽 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
+    await sts.edit(f"""𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈 𝙲𝙷𝙰𝙽𝙶𝙴𝙳 𝙵𝙸𝙻𝙴 𝙲𝙰𝙿𝚃𝙸𝙾𝙽 𝙵𝙾𝚁 {title} 𝚃𝙾\n\n{pr0fess0r_99}""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆🗑️", callback_data="close") ]] ))
