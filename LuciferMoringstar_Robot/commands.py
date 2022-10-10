@@ -89,7 +89,7 @@ async def start(bot: lucifermoringstar_robot, update):
 
 @lucifermoringstar_robot.on_message(filters.command(["admin", "admins"]) & filters.user(ADMINS) & filters.private, group=2)
 async def admin(bot: lucifermoringstar_robot, update):
-    await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=ADMIN_CMD_MESSAGE, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("× 𝙲𝙻𝙾𝚂𝙴 ×", callback_data="close") ]] ))
+    await bot.send_photo(photo=random.choice(PICS), chat_id=update.chat.id, caption=ADMIN_CMD_MESSAGE, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆🗑️", callback_data="close") ]] ))
 
 @lucifermoringstar_robot.on_message(filters.command(["about"]) & filters.private, group=3)
 async def about(bot: lucifermoringstar_robot, update):
