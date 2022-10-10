@@ -242,7 +242,7 @@ async def cb_handler(bot, update):
                 if settings["filemode"]:
                     try:
                         await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=protect_content)
-                        await update.answer("""𝙲𝙷𝙴𝙲𝙺 𝙿𝙼, 𝙸 𝙷𝙰𝚅𝙴 𝚂𝙴𝙽𝚃 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙿𝙼\n𝙲𝙻𝙸𝙲𝙺 𝙲𝙷𝙴𝙲𝙺 𝙿𝙼 𝙱𝚄𝚃𝚃𝙾𝙽""", show_alert=True)   
+                        await update.answer("""𝘊𝘩𝘦𝘤𝘬 𝘗𝘔 . 𝘐 𝘏𝘢𝘷𝘦 𝘚𝘦𝘯𝘵 𝘍𝘪𝘭𝘦 𝘐𝘯 𝘗𝘔 \n𝘊𝘭𝘪𝘤𝘬 𝙂𝙚𝙩 𝙁𝙞𝙡𝙚🍃 𝘉𝘶𝘵𝘵𝘰𝘯""", show_alert=True)   
                     except Exception as e:
                         await update.message.reply(f"{e}")                  
                         dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
