@@ -66,7 +66,7 @@ CHAT_LOGS_MESSAGE = """
 
 SPELLMODE_MESSAGE = """
 **__Hello 👋 {mention}**__
-**__Couldn't Find {query} ?  Please Click Your Request Name**__"""
+𝐶𝑜𝑢𝑙𝑑𝑛'𝑡 𝐹𝑖𝑛𝑑 **__{query} ?__** \n 𝑆𝑝𝑒𝑙𝑙𝑖𝑛𝑔 𝑀𝑖𝑠𝑡𝑎𝑘𝑒 𝑂𝑟 𝑈𝑛𝑟𝑒𝑙𝑒𝑎𝑠𝑒𝑑 𝑀𝑜𝑣𝑖𝑒. 𝑃𝑙𝑒𝑎𝑠𝑒 𝐶ℎ𝑒𝑐𝑘 𝑌𝑜𝑢𝑟 𝑅𝑒𝑞𝑢𝑒𝑠𝑡 .. """
 
 REQUEST_MESSAGE = """
 𝐓𝐢𝐭𝐥𝐞 : {query} \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : {mention}
