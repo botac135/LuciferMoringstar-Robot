@@ -399,7 +399,7 @@ async def cb_handler(bot, update):
                 pass
         elif update.data == "inlinecb":
             try:
-                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('𝑺𝒆𝒂𝒓𝒄𝒉 𝑯𝒆𝒓𝒆🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('𝑺𝒆𝒂𝒓𝒄𝒉 𝑯𝒆𝒓𝒆🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "funcb":
