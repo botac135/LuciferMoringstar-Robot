@@ -220,12 +220,12 @@ async def cb_handler(bot, update):
             size = get_size(files.file_size)
 
             if not await db.is_user_exist(update.from_user.id):
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 return
             if AUTH_CHANNEL and not await is_subscribed(bot, update):
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 return
@@ -245,7 +245,7 @@ async def cb_handler(bot, update):
                         await update.answer("""𝙲𝙷𝙴𝙲𝙺 𝙿𝙼, 𝙸 𝙷𝙰𝚅𝙴 𝚂𝙴𝙽𝚃 𝙵𝙸𝙻𝙴𝚂 𝙸𝙽 𝙿𝙼\n𝙲𝙻𝙸𝙲𝙺 𝙲𝙷𝙴𝙲𝙺 𝙿𝙼 𝙱𝚄𝚃𝚃𝙾𝙽""", show_alert=True)   
                     except Exception as e:
                         await update.message.reply(f"{e}")                  
-                        dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                        dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                         await asyncio.sleep(30)
                         await dellogs.delete()
                 else:
@@ -258,31 +258,31 @@ async def cb_handler(bot, update):
                         await dlReply.delete()
                     except Exception as e:
                         await update.message.reply(f"**(1)**» {e}")
-                        dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                        dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                         await asyncio.sleep(30)
                         await dellogs.delete()
             except UserIsBlocked:
                 await update.answer('Unblock the bot mahn !', show_alert=True)
             except PeerIdInvalid:
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
             except Exception as e:
                 await update.message.reply(f"**(2)**» {e}")
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 
         elif update.data.startswith("luciferPM"):
             mrk, file_id = update.data.split("#")
             # if not await db.is_user_exist(update.from_user.id):
-                # dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                # dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                 # await asyncio.sleep(30)
                 # await dellogs.delete()
                 # return
             if AUTH_CHANNEL and not await is_subscribed(bot, update):
                 await update.answer(NOT_SUB, show_alert=True)
-                # dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                # dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                 # await asyncio.sleep(30)
                 # await dellogs.delete()
                 return
@@ -298,7 +298,7 @@ async def cb_handler(bot, update):
                 await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=SAVE_FILES)            
             except Exception as e:
                 print(f"{e}")
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 [𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍](t.me/freakersmovie)""", reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 return
@@ -364,62 +364,62 @@ async def cb_handler(bot, update):
                 pass        
         elif update.data == "autofilter":
             try:
-                await update.message.edit(autofilter_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(autofilter_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "connection":
             try:
-                await update.message.edit(modeles_text.connection_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.connection_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "spellcheck":
             try:
-                await update.message.edit(spellcheck_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(spellcheck_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "welcome":
             try:
-                await update.message.edit(welcome_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(welcome_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "misc":
             try:
-                await update.message.edit(misc_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(misc_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "filecaption":
             try:
-                await update.message.edit(filecaption_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(filecaption_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "filestore":
             try:
-                await update.message.edit(modeles_text.filestore_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.filestore_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "inlinecb":
             try:
-                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('🔍 Search Here 🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.inline_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton('𝑺𝒆𝒂𝒓𝒄𝒉 𝑯𝒆𝒓𝒆🔎', switch_inline_query_current_chat="") ],[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "funcb":
             try:
-                await update.message.edit(modeles_text.fun_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.fun_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "fontcb":
             try:
-                await update.message.edit(modeles_text.font_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.font_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "sharetextcb":
             try:
-                await update.message.edit(modeles_text.sharetext_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.sharetext_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
         elif update.data == "ttscb":
             try:
-                await update.message.edit(modeles_text.tts_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("⇇ Back To Menu ⇇", callback_data="help") ]] ))
+                await update.message.edit(modeles_text.tts_text, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑩𝒂𝒄𝒌 𝑻𝒐 𝑴𝒆𝒏𝒖", callback_data="help") ]] ))
             except MessageNotModified:
                 pass
 
