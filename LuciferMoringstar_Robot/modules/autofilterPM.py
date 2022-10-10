@@ -37,8 +37,20 @@ async def pm_filters(client, update):
     if 2 < len(update.text) < 100:    
         btn = []
         search = update.text
-
+        settings = await get_settings(update.chat.id)
+        MOVIE_TEXT = settings["template"]
         files = await get_filter_results(query=search)
+        if not files:
+            if settings["spellmode"]:
+                try:
+                    reply = search.replace(" ", '+')  
+                    buttons = [[ InlineKeyboardButton("𝑮𝒐𝒐𝒈𝒍𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 🔎", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆 🗑️", callback_data="close") ]]
+                    spell = await update.reply_text(text=settings["spelltext"].format(query=search, first_name=update.from_user.first_name, last_name=update.from_user.last_name, title=update.chat.title, mention=update.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
+                    await asyncio.sleep(60)
+                    await spell.delete()
+                except:
+                    pass
+            return
         if files:
             for file in files:
                 file_id = file.file_id
