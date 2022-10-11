@@ -34,7 +34,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", FILECAPTION_MESSAGE)
 PROTECT_FILES = "False"
 FILTER_DEL_SECOND = FILTER_DEL_SECOND
 " IMDB FUNCTIONS "
-LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
+LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 COMMANDS = ["pmautofilter", "connections", "delete"]
