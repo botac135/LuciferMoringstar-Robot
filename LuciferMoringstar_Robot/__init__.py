@@ -3,7 +3,7 @@
 from os import environ
 from config import ( is_enabled, search, AUTH_GROUPS, AUTH_USERS, ADMINS, SUPPORT_CHAT, CREATOR_USERNAME, CREATOR_NAME, AUTH_CHANNEL,
     PICS, BOT_TOKEN, API_ID, API_HASH, DATABASE_NAME, DATABASE_URI, CHANNELS, LOG_CHANNEL, FILTER_BUTTONS, GET_FILECHANNEL, FILTER_DEL_SECOND )
-from .translation import SPELLMODE_MESSAGE, WELCOME_MESSAGE, REQUEST_MESSAGE, FILECAPTION_MESSAGE, START_MESSAGE
+from .translation import SPELLMODE_MESSAGE, WELCOME_MESSAGE, REQUEST_MESSAGE, MOVIE_TEXT_2, FILECAPTION_MESSAGE, START_MESSAGE
 
 # UserAccount
 API_HASH = API_HASH
@@ -34,7 +34,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", FILECAPTION_MESSAGE)
 PROTECT_FILES = "False"
 FILTER_DEL_SECOND = FILTER_DEL_SECOND
 " IMDB FUNCTIONS "
-LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), True)
+LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 
 COMMANDS = ["pmautofilter", "connections", "delete"]
@@ -42,6 +42,7 @@ COMMANDS = ["pmautofilter", "connections", "delete"]
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 REQUEST_MOVIE = is_enabled((environ.get('REQUEST_MOVIE', "True")), True)
 MOVIE_TEXT = environ.get("REQUEST_MESSAGE", REQUEST_MESSAGE)
+MOVIE_TXT = environ.get("MOVIE_TEXT_2", MOVIE_TEXT_2)
 SPELL_MODE = is_enabled((environ.get('SPELL_MODE', "True")), True)
 SPELL_TEXT = environ.get("SPELLMODE_MESSAGE", SPELLMODE_MESSAGE)
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
