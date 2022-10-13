@@ -35,7 +35,7 @@ from LuciferMoringstar_Robot import DATABASE_URI, DATABASE_NAME, temp
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-
+from imdb import IMDb
 client = AsyncIOMotorClient(DATABASE_URI)
 db = client[DATABASE_NAME]
 instance = Instance.from_db(db)
