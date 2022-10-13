@@ -45,7 +45,7 @@ async def pm_filters(client, message):
             if settings["spellmode"]:
                 try:
                     reply = search.replace(" ", '+')  
-                    buttons = [[ InlineKeyboardButton("𝑮𝒐𝒐𝒈𝒍𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 🔎", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("𝑮𝒆𝒕 𝑴𝒐𝒗𝒊𝒆𝒔🍃", url=f"https://t.me/freakersfilmy") ],[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆 🗑️", callback_data="close") ]]
+                    buttons = [[ InlineKeyboardButton("𝑮𝒐𝒐𝒈𝒍𝒆 𝑺𝒆𝒂𝒓𝒄𝒉 🔎", url=f"https://www.google.com/search?q={reply}") ],[ InlineKeyboardButton("𝑮𝒆𝒕 𝑺𝒆𝒓𝒊𝒆𝒔🍃", url=f"https://t.me/freakersfilmy") ],[ InlineKeyboardButton("𝑪𝒍𝒐𝒔𝒆 🗑️", callback_data="close") ]]
                     spell = await message.reply_text(text=settings["spelltext"].format(query=search, first_name=message.from_user.first_name, last_name=message.from_user.last_name, title=message.chat.title, mention=message.from_user.mention), disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(buttons))           
                     await asyncio.sleep(60)
                     await spell.delete()
