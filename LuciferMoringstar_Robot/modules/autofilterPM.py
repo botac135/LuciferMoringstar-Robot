@@ -59,7 +59,8 @@ async def pm_filters(client, message):
                 filename = f"{file.file_name}"
                 if SINGLE_BUTTON:
                     btn.append(
-                        [InlineKeyboardButton(text=f"{filesize} {filename}", callback_data=f"luciferPM#{file_id}")]
+                        [InlineKeyboardButton(text=f"{filesize}", callback_data=f"luciferPM#{file_id}"),
+                         InlineKeyboardButton(text=f"{filename}", callback_data=f"luciferPM#{file_id}")]
                     )
                 else:
                     btn.append(
