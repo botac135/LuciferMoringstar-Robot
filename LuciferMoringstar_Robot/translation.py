@@ -69,8 +69,16 @@ SPELLMODE_MESSAGE = """
 𝐶𝑜𝑢𝑙𝑑𝑛'𝑡 𝐹𝑖𝑛𝑑 **__{query} ?__** \n 𝑆𝑝𝑒𝑙𝑙𝑖𝑛𝑔 𝑀𝑖𝑠𝑡𝑎𝑘𝑒 𝑂𝑟 𝑈𝑛𝑟𝑒𝑙𝑒𝑎𝑠𝑒𝑑 𝑀𝑜𝑣𝑖𝑒. 𝑃𝑙𝑒𝑎𝑠𝑒 𝐶ℎ𝑒𝑐𝑘 𝑌𝑜𝑢𝑟 𝑅𝑒𝑞𝑢𝑒𝑠𝑡 .. """
 
 REQUEST_MESSAGE = """
+𝘛𝘪𝘵𝘭𝘦 : ({title}{url})
+𝘠𝘦𝘢𝘳 : {year}
+𝘙𝘢𝘵𝘪𝘯𝘨 : ⭐️{rating}/10
+𝘎𝘦𝘯𝘳𝘦 : {genres}
+𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘣𝘺 : <i><b>@freakersfilmy </b></i>©
+"""
+
+MOVIE_TEXT_2 = """
 𝐓𝐢𝐭𝐥𝐞 : {query} \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : {mention}
-🧐𝙁𝙧𝙚𝙖𝙠𝙚𝙧𝙨🎭𝙁𝙞𝙡𝙢𝙮™🍿©
+🧐𝙁𝙧𝙚𝙖𝙠𝙚𝙧𝙨🎭𝙁𝙞𝙡𝙢𝙮™🍿
 """
 
 WELCOME_MESSAGE = """
