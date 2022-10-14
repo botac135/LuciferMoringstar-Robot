@@ -88,15 +88,15 @@ async def group_filters(client, message):
                 imdb=await get_poster(search)
             if imdb and imdb.get('poster'):
                 dell=await message.reply_photo(photo=imdb.get('poster'), caption=MOVIE_TEXT.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
+                await asyncio.sleep(FILTER_DEL_SECOND)
                 await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
             elif imdb:
                 dell=await message.reply_photo(photo=imdb.get('poster'), caption=MOVIE_TEXT.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
+                await asyncio.sleep(FILTER_DEL_SECOND)
                 await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
             else:
                 dell=await message.reply_photo(photo=random.choice(PICS), caption=MOVIE_TXT.format(mention=message.from_user.mention, query=search, greeting=None, group_name = f"[{message.chat.title}](t.me/{message.chat.username})" or f"[{message.chat.title}](t.me/{message.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(1000)
+                await asyncio.sleep(FILTER_DEL_SECOND)
                 await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
             return
 
@@ -115,15 +115,15 @@ async def group_filters(client, message):
             imdb=await get_poster(search)
         if imdb and imdb.get('poster'):
             dell=await message.reply_photo(photo=imdb.get('poster'), caption=MOVIE_TEXT.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
+            await asyncio.sleep(FILTER_DEL_SECOND)
             await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
         elif imdb:
             dell=await message.reply_photo(photo=imdb.get('poster'), caption=MOVIE_TEXT.format(mention=message.from_user.mention, query=search, title=imdb.get('title'), genres=imdb.get('genres'), year=imdb.get('year'), rating=imdb.get('rating'), url=imdb['url']), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
+            await asyncio.sleep(FILTER_DEL_SECOND)
             await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
         else:
             dell=await message.reply_photo(photo=random.choice(PICS), caption=MOVIE_TXT.format(mention=message.from_user.mention, query=search, greeting=None, group_name = f"[{message.chat.title}](t.me/{message.chat.username})" or f"[{message.chat.title}](t.me/{message.from_user.username})"), reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(1000)
+            await asyncio.sleep(FILTER_DEL_SECOND)
             await dell.edit(f"⚙️ Filter For {search} Closed 🗑️")
 
 @Client.on_message(filters.private & filters.command('pmautofilter'))
