@@ -77,8 +77,8 @@ REQUEST_MESSAGE = """
 """
 
 MOVIE_TEXT_2 = """
-𝐓𝐢𝐭𝐥𝐞 : {query} \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲 : {mention}
-🧐𝙁𝙧𝙚𝙖𝙠𝙚𝙧𝙨🎭𝙁𝙞𝙡𝙢𝙮™🍿
+𝘛𝘪𝘵𝘭𝘦 :- {query} \n𝘙𝘦𝘲𝘶𝘦𝘴𝘵𝘦𝘥 𝘉𝘺 :- {mention}
+𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘉𝘺 :- @freakersfilmy ©
 """
 
 WELCOME_MESSAGE = """
@@ -106,9 +106,10 @@ STATUS_MESSAGE = """
 × 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 : {users}\n× 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 : {files}\n× 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 : {chats}"""
 
 GETFILE_TEXT = """
-𝙷𝙴𝚈 {mention} 𝚈𝙾𝚄𝚁 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈
+𝙷𝙴𝚈 {mention}
+𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 [𝘊𝘓𝘐𝘊𝘒 𝘏𝘌𝘙𝘌](t.me/freakersmovie) & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..! 
 \n𝙵𝙸𝙻𝙴𝙽𝙰𝙼𝙴 : `{file_name}`\n\n𝙵𝙸𝙻𝙴𝚂𝙸𝚉𝙴 : {file_size}
-𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 
+𝘠𝘰𝘶 𝘔𝘶𝘴𝘵 𝘑𝘰𝘪𝘯 𝘖𝘶𝘳 𝘜𝘱𝘥𝘢𝘵𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭..
 """
 
 NOT_SUB = """
