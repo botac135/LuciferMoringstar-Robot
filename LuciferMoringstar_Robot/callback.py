@@ -55,7 +55,7 @@ async def cb_handler(bot, update):
             try:
                 data = temp.BUTTONS[keyword]
             except KeyError:
-                await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
+                await update.answer("🔊𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘌𝘹𝘱𝘪𝘳𝘦𝘥 \n🔎𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯...! ",show_alert=True)
                 return
 
             if int(index) == int(data["total"]) - 2:
@@ -91,7 +91,7 @@ async def cb_handler(bot, update):
             try:
                 data = temp.BUTTONS[keyword]
             except KeyError:
-                await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
+                await update.answer("🔊𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘌𝘹𝘱𝘪𝘳𝘦𝘥 \n🔎𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯...!",show_alert=True)
                 return
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
@@ -124,7 +124,7 @@ async def cb_handler(bot, update):
             try:
                 data = temp.BUTTONS[keyword]
             except KeyError:
-                await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
+                await update.answer("🔊𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘌𝘹𝘱𝘪𝘳𝘦𝘥 \n🔎𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯...!",show_alert=True)
                 return
             if int(index) == int(data["total"]) - 2:
                 buttons = data['buttons'][int(index)+1].copy()
@@ -153,7 +153,7 @@ async def cb_handler(bot, update):
             try:
                 data = temp.BUTTONS[keyword]
             except KeyError:
-                await update.answer("𝚃𝙷𝙸𝚂 𝙼𝚈 𝙾𝙻𝙳 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝚂𝙾 𝙿𝙻𝙴𝙰𝚂𝙴 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙰𝙶𝙰𝙸𝙽 🙏",show_alert=True)
+                await update.answer("🔊𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘌𝘹𝘱𝘪𝘳𝘦𝘥 \n🔎𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯...!",show_alert=True)
                 return
             if int(index) == 1:
                 buttons = data['buttons'][int(index)-1].copy()
@@ -220,12 +220,12 @@ async def cb_handler(bot, update):
             size = get_size(files.file_size)
 
             if not await db.is_user_exist(update.from_user.id):
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.mention}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 return
             if AUTH_CHANNEL and not await is_subscribed(bot, update):
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.mention}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 return
@@ -245,7 +245,7 @@ async def cb_handler(bot, update):
                         await update.answer("""𝘊𝘩𝘦𝘤𝘬 𝘗𝘔 .\n𝘐 𝘏𝘢𝘷𝘦 𝘚𝘦𝘯𝘵 𝘍𝘪𝘭𝘦 𝘐𝘯 𝘗𝘔 \n𝘊𝘭𝘪𝘤𝘬 𝙂𝙚𝙩 𝙁𝙞𝙡𝙚🍃 𝘉𝘶𝘵𝘵𝘰𝘯 𝘉𝘦𝘭𝘰𝘸 👇""", show_alert=True)   
                     except Exception as e:
                         await update.message.reply(f"{e}")                  
-                        dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                        dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.mention}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                         await asyncio.sleep(30)
                         await dellogs.delete()
                 else:
@@ -258,31 +258,31 @@ async def cb_handler(bot, update):
                         await dlReply.delete()
                     except Exception as e:
                         await update.message.reply(f"**(1)**» {e}")
-                        dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                        dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.mention}</b>\n𝘑𝘰𝘪𝘯 𝘤𝘩𝘢𝘯𝘯𝘜𝘱𝘥𝘢𝘵𝘦 𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                         await asyncio.sleep(30)
                         await dellogs.delete()
             except UserIsBlocked:
                 await update.answer('Unblock the bot mahn !', show_alert=True)
             except PeerIdInvalid:
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.mention}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
             except Exception as e:
                 await update.message.reply(f"**(2)**» {e}")
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.mention} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.mention}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 
         elif update.data.startswith("luciferPM"):
             mrk, file_id = update.data.split("#")
             # if not await db.is_user_exist(update.from_user.id):
-                # dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                # dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.id}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                 # await asyncio.sleep(30)
                 # await dellogs.delete()
                 # return
             if AUTH_CHANNEL and not await is_subscribed(bot, update):
                 await update.answer(NOT_SUB, show_alert=True)
-                # dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                # dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.id}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                 # await asyncio.sleep(30)
                 # await dellogs.delete()
                 return
@@ -298,7 +298,7 @@ async def cb_handler(bot, update):
                 await bot.send_cached_media(chat_id=update.from_user.id, file_id=file_id, caption=caption, reply_markup=InlineKeyboardMarkup(buttons), protect_content=SAVE_FILES)            
             except Exception as e:
                 print(f"{e}")
-                dellogs=await update.message.reply_text(f"""<b>𝙷𝙴𝚈 {update.from_user.id} 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈<b>\n\n• **𝚃𝙸𝚃𝙻𝙴** : <code>{title}</code>\n\n• **𝚂𝙸𝚉𝙴** : {size} \n𝒀𝒐𝒖 𝑴𝒖𝒔𝒕 𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 - @freakersmovie """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ]] ))
+                dellogs=await update.message.reply_text(f"""<b>𝘏𝘦𝘺 {update.from_user.id}</b>\n𝘑𝘰𝘪𝘯 𝘜𝘱𝘥𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘯𝘦𝘭 & 𝘛𝘳𝘺 𝘈𝘨𝘢𝘪𝘯..!\n\n@freakers_series """, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒆🍃", url=f"https://telegram.dog/{temp.Bot_Username}?start=muhammedrk-mo-tech-group-{file_id}") ],[ InlineKeyboardButton("𝑱𝒐𝒊𝒏 𝑼𝒑𝒅𝒂𝒕𝒆 𝑪𝒉𝒂𝒏𝒏𝒆𝒍🍃", url=f"https://t.me/freakers_series")]] ))
                 await asyncio.sleep(30)
                 await dellogs.delete()
                 return
