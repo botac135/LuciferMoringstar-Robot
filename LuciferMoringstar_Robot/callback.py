@@ -305,7 +305,7 @@ async def cb_handler(bot, update):
               
         elif update.data == "start":
             buttons = [[ InlineKeyboardButton("🔎𝑺𝒆𝒂𝒓𝒄𝒉 𝑭𝒊𝒍𝒆𝒔", switch_inline_query_current_chat='') ],
-                      [ InlineKeyboardButton("𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔", url=f"t.me/freakersmovie"), InlineKeyboardButton("𝑴𝒐𝒗𝒊𝒆𝒔 𝑼𝒑𝒅𝒂𝒕𝒆𝒔", url="t.me/freakersmovie") ],
+                      [ InlineKeyboardButton("𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔🍃", url=f"t.me/freakersmovie"), InlineKeyboardButton("𝑺𝒆𝒓𝒊𝒆𝒔 𝑼𝒑𝒅𝒂𝒕𝒆𝒔🍃", url="t.me/freakers_series") ],
                       [ InlineKeyboardButton("𝑯𝒆𝒍𝒑", callback_data="help"), InlineKeyboardButton("𝑨𝒃𝒐𝒖𝒕𝒔", callback_data="about") ]] 
             await update.message.edit(START_MESSAGE.format(mention=update.from_user.mention, name=temp.Bot_Name, username=temp.Bot_Username), reply_markup=InlineKeyboardMarkup(buttons))
 
