@@ -27,7 +27,7 @@
 import re, random, asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from LuciferMoringstar_Robot import temp, PICS, REQUEST_MOVIE, SINGLE_BUTTON, MOVIE_TEXT, MOVIE_TXT
+from LuciferMoringstar_Robot import temp, SPELL_TEXT, PICS, REQUEST_MOVIE, SINGLE_BUTTON, MOVIE_TEXT, MOVIE_TXT
 from LuciferMoringstar_Robot.functions import get_size, split_list, get_settings
 from database.autofilter_mdb import get_filter_results, get_poster
 
