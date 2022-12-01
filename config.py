@@ -24,7 +24,7 @@ PICS = os.environ.get("PICS", "https://telegra.ph/file/78501ede09af36c54b3ed.jpg
 # Database
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 DATABASE_URI = os.environ.get("DATABASE_URI", "mongodb+srv://JD2021:JD2021@cluster0.zweu4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
-COLLECTION_NAME = environ.get("COLLECTION_NAME ", "Telegram_files")
+COLLECTION_NAME = os.environ.get("COLLECTION_NAME ", "Telegram_files")
 
 # Chats & Users
 ADMINS = os.environ.get("ADMINS", "739667270")
@@ -35,7 +35,7 @@ LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001555083458")
 GET_FILECHANNEL = os.environ.get("GET_FILECHANNEL", "")
 FILTER_DEL_SECOND = int(os.environ.get("FILTER_DEL_SECOND", "3600"))
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "ᴛɪᴛʟᴇ: <code>{file_name}</code>\n▬▬▬▬▬▬▬▬▬▬▬▬\n🍃<b><i>Movies Update Channel</b></i>🍃\n<i>@freakersmovie</i>\n🍃<b><i>Series Update Channel</b></i>🍃\n<i>@freakers_series</i>\n▬▬▬▬▬▬▬▬▬▬▬▬\n☘𝙅𝙤𝙞𝙣:-<b><i>https://t.me/freakersmovie</b></i>\n\n🧐𝙁𝙧𝙚𝙖𝙠𝙚𝙧𝙨🎭𝙁𝙞𝙡𝙢𝙮™🍿©\n100% ғᴀꜱᴛ & ϙᴜᴀʟɪᴛʏ\n▬▬▬▬▬▬▬▬▬▬▬▬ ")
+CUSTOM_FILE_CAPTION = os.environ.get("CUSTOM_FILE_CAPTION", "ᴛɪᴛʟᴇ: <code>{file_name}</code>\n▬▬▬▬▬▬▬▬▬▬▬▬\n🍃<b><i>Movies Update Channel</b></i>🍃\n<i>@freakersmovie</i>\n🍃<b><i>Series Update Channel</b></i>🍃\n<i>@freakers_series</i>\n▬▬▬▬▬▬▬▬▬▬▬▬\n☘𝙅𝙤𝙞𝙣:-<b><i>https://t.me/freakersmovie</b></i>\n\n🧐𝙁𝙧𝙚𝙖𝙠𝙚𝙧𝙨🎭𝙁𝙞𝙡𝙢𝙮™🍿©\n100% ғᴀꜱᴛ & ϙᴜᴀʟɪᴛʏ\n▬▬▬▬▬▬▬▬▬▬▬▬ ")
 
 # AutoFilter
 AUTH_GROUPS = os.environ.get("AUTH_GROUPS", "")
@@ -47,5 +47,5 @@ PROTECT_FILES = is_enabled((os.environ.get('PROTECT_FILES', "True")), True)
     
 # URL Shortener
 
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'zagl.in')
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'fd7b48e8dec726625b921cc5f44f582892246672')
+URL_SHORTENR_WEBSITE = os.environ.get('URL_SHORTENR_WEBSITE', 'zagl.in')
+URL_SHORTNER_WEBSITE_API = os.environ.get('URL_SHORTNER_WEBSITE_API', 'fd7b48e8dec726625b921cc5f44f582892246672')
