@@ -25,6 +25,7 @@
 # License Link : https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot/blob/LuciferMoringstar-Robot/LICENSE
  
 import re, random, asyncio 
+from utils import get_shortlink
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from LuciferMoringstar_Robot import temp, PICS, REQUEST_MOVIE, FILTER_DEL_SECOND, MOVIE_TEXT, MOVIE_TXT
