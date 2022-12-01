@@ -38,3 +38,10 @@ AUTH_GROUPS = os.environ.get("AUTH_GROUPS", "")
 AUTH_USERS = [int(user) if search.search(user) else user for user in os.environ.get('AUTH_USERS', '').split()]
 FILTER_BUTTONS = os.environ.get("FILTER_BUTTONS", "5")
 PROTECT_FILES = is_enabled((os.environ.get('PROTECT_FILES', "True")), True) 
+
+## EXTRA FEATURES ##
+    
+      # URL Shortener #
+
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'zagl.in')
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'fd7b48e8dec726625b921cc5f44f582892246672')
