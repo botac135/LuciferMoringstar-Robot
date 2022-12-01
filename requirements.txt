@@ -5,7 +5,9 @@ Motor
 Marshmallow
 Umongo
 Requests
+bs4
 Aiofiles
 imdbpy==2021.4.18
+pynewtonmath
 googletrans==3.1.0a0 # Google Translater 
 gTTS # Google Translater
