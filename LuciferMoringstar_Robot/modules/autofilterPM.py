@@ -25,7 +25,7 @@
 # License Link : https://github.com/PR0FESS0R-99/LuciferMoringstar-Robot/blob/LuciferMoringstar-Robot/LICENSE
 
 import re, random, asyncio
-from utils import get_shortlink
+from utils import get_shortlink, get_settings, get_size, is_subscribed, temp, save_group_settings, get_poster
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from LuciferMoringstar_Robot import temp, SPELL_TEXT, PICS, REQUEST_MOVIE, SINGLE_BUTTON, MOVIE_TEXT, MOVIE_TXT
@@ -60,13 +60,19 @@ async def pm_filters(client, message):
                 filename = f"{file.file_name}"
                 if SINGLE_BUTTON:
                     btn.append(
-                        [InlineKeyboardButton(text=f"{filename}", callback_data=f"luciferPM#{file_id}"),
-                         InlineKeyboardButton(text=f"{filesize}", callback_data=f"luciferPM#{file_id}")]
+                        [InlineKeyboardButton(
+                             text=f"[{get_size(file.file_size)}] {file.file_name}", 
+                             url=await get_shortlink(f"https://t.me/{temp.U_NAME}?start=files_{file.file_id}")]
                     )
                 else:
                     btn.append(
-                        [InlineKeyboardButton(text=f"{filesize}", callback_data=f"luciferPM#{file_id}"),
-                         InlineKeyboardButton(text=f"{filename}", callback_data=f"luciferPM#{file_id}")]
+                        [InlineKeyboardButton(
+                             text=f"{file.file_name}", 
+                             url=await get_shortlink(f"https://t.me/{temp.U_NAME}?start=files_{file.file_id}")
+                        ),
+                        InlineKeyboardButton(
+                            text=f"{get_size(file.file_size)}", 
+                            url=await get_shortlink(f"https://t.me/{temp.U_NAME}?start=files_{file.file_id}")]
                     )
         else:
             return
