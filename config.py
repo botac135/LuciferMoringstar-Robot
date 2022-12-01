@@ -34,7 +34,7 @@ CHANNELS = [int(ch) if search.search(ch) else ch for ch in os.environ.get("CHANN
 LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001555083458")
 GET_FILECHANNEL = os.environ.get("GET_FILECHANNEL", "")
 FILTER_DEL_SECOND = int(os.environ.get("FILTER_DEL_SECOND", "3600"))
-IMDB = is_enabled((environ.get('IMDB', "True")), True)
+IMDB = is_enabled((os.environ.get('IMDB', "True")), True)
 CUSTOM_FILE_CAPTION = os.environ.get("CUSTOM_FILE_CAPTION", "ᴛɪᴛʟᴇ: <code>{file_name}</code>\n▬▬▬▬▬▬▬▬▬▬▬▬\n🍃<b><i>Movies Update Channel</b></i>🍃\n<i>@freakersmovie</i>\n🍃<b><i>Series Update Channel</b></i>🍃\n<i>@freakers_series</i>\n▬▬▬▬▬▬▬▬▬▬▬▬\n☘𝙅𝙤𝙞𝙣:-<b><i>https://t.me/freakersmovie</b></i>\n\n🧐𝙁𝙧𝙚𝙖𝙠𝙚𝙧𝙨🎭𝙁𝙞𝙡𝙢𝙮™🍿©\n100% ғᴀꜱᴛ & ϙᴜᴀʟɪᴛʏ\n▬▬▬▬▬▬▬▬▬▬▬▬ ")
 
 # AutoFilter
