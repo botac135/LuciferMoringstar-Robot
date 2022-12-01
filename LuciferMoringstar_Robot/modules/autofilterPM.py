@@ -60,19 +60,12 @@ async def pm_filters(client, message):
                 filename = f"{file.file_name}"
                 if SINGLE_BUTTON:
                     btn.append(
-                        [InlineKeyboardButton(
-                             text=f"[{get_size(file.file_size)}] {file.file_name}", 
-                             url=await get_shortlink(f"https://t.me/{temp.Bot_Username}?start=files_{file.file_id}")]
+                        [InlineKeyboardButton(text=f"[{get_size(file.file_size)}] {file.file_name}", url=await get_shortlink(f"https://t.me/{temp.Bot_Username}?start=files_{file.file_id}")]
                     )
                 else:
                     btn.append(
-                        [InlineKeyboardButton(
-                             text=f"{file.file_name}", 
-                             url=await get_shortlink(f"https://t.me/{temp.Bot_Username}?start=files_{file.file_id}")
-                        ),
-                        InlineKeyboardButton(
-                            text=f"{get_size(file.file_size)}", 
-                            url=await get_shortlink(f"https://t.me/{temp.Bot_Username}?start=files_{file.file_id}")]
+                        [InlineKeyboardButton(text=f"{file.file_name}", url=await get_shortlink(f"https://t.me/{temp.Bot_Username}?start=files_{file.file_id}"),
+                        InlineKeyboardButton(text=f"{get_size(file.file_size)}", url=await get_shortlink(f"https://t.me/{temp.Bot_Username}?start=files_{file.file_id}")]
                     )
         else:
             return
